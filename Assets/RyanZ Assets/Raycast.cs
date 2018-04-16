@@ -48,10 +48,9 @@ public class Raycast : MonoBehaviour {
 					hit.collider.gameObject.GetComponent<ActivateDialogue> ().playDialogueClip ();
 				} else if (hit.collider.gameObject.CompareTag ("Tablet")) {
 					hit.collider.gameObject.GetComponent<MoveTablet> ().moveFront ();
-				} else if (hit.collider.gameObject.CompareTag ("ExitTablet")) {
-					hit.collider.gameObject.GetComponent<MoveTablet> ().moveFront ();
-				}
-				else {
+				} else if (hit.collider.gameObject.CompareTag ("Boss")) {
+					hit.collider.gameObject.GetComponent<EndIntro>().playDialogueClip();
+				} else {
 					Debug.Log ("Miss", gameObject);
 				}
 

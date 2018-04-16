@@ -18,4 +18,6 @@ public class ActivateDialogue : MonoBehaviour {
 	public void playDialogueClip(){
 		DialogueManager.Instance.beginDialogue (dialogueClip);
 	}
+
+
 }
