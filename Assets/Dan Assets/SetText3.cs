@@ -10,7 +10,7 @@ public class SetText3 : MonoBehaviour
     private maxBudget variableAccess;
     float investment;
     // Use this for initialization
-    void Start()
+	void Update()
     {
         variableAccess = passVariables.GetComponent<maxBudget>();
 

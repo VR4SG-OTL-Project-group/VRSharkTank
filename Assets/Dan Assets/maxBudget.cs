@@ -4,11 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class maxBudget : MonoBehaviour {
-    static float budgetCap = 100000;
+    static float budgetCap = 1000000;
     static float currentInvest = 0;
     static float investment1 = 0;
     static float investment2 = 0;
     static float investment3 = 0;
+    static double investment1return = 0.5;
+    static double investment2return = 2.1;
+    static double investment3return = 1.2;
     static int updateInt = 0;
     Text displayText;
     // Use this for initialization
@@ -46,6 +49,20 @@ public class maxBudget : MonoBehaviour {
     public float readInvest3()
     {
         return investment3;
+    }
+    public double readInvest1return()
+    {
+        return investment1return;
+    }
+
+    public double readInvest2return()
+    {
+        return investment2return;
+    }
+
+    public double readInvest3return()
+    {
+        return investment3return;
     }
 
     // Update is called once per frame
