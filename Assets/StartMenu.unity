@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f02f822fdc6eeef4eba3c88fc470c34d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f32da245aa9e30f429b028a09c313a73, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -352,7 +352,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1256466326}
+      - m_Target: {fileID: 1256466327}
         m_MethodName: StartLevel
         m_Mode: 1
         m_Arguments:
@@ -720,7 +720,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1256466326}
+      - m_Target: {fileID: 1256466327}
         m_MethodName: AboutPress
         m_Mode: 1
         m_Arguments:
@@ -894,7 +894,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 9e5500bd42da61548a0a447b757fac63, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebaaa01064554bc498d1705d289e8a97, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1045,6 +1045,7 @@ GameObject:
   - component: {fileID: 1256466323}
   - component: {fileID: 1256466322}
   - component: {fileID: 1256466326}
+  - component: {fileID: 1256466327}
   m_Layer: 5
   m_Name: MainMenuCanvas
   m_TagString: Untagged
@@ -1142,6 +1143,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fb6241e1b8de6b34dad4cf426c48b6dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1256466327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1256466321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb97c317b2c55c4a8dfa861760b9fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   aboutMenu: {fileID: 101726580}
@@ -1404,7 +1416,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1256466326}
+      - m_Target: {fileID: 1256466327}
         m_MethodName: BackPress
         m_Mode: 1
         m_Arguments:

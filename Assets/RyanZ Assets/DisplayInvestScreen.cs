@@ -32,10 +32,11 @@ public class DisplayInvestScreen : MonoBehaviour {
 
 	public void finishedPitchOneTwo(){
 		doubleClick++;
-		if (doubleClick >= 2) {
-			questionMenu.SetActive (false);
-			GameObject.Find ("QuestionMenuObject_" + (pitcherNumber + 1)).SetActive (true);
-		}
+		questionMenu.SetActive (false);
+		GameObject.Find ("QuestionMenuObject_" + (pitcherNumber + 1)).SetActive (true);
+		GameObject.Find ("BlueSuitMan").GetComponent<NPC1WalkIn>().ExitRoom ();
+		GameObject.Find ("GreenSuitMan").GetComponent<NPC2WalkIn>().ExitRoom ();
+
 	}
 		
 }

@@ -8,6 +8,8 @@ public class NPC1WalkIn : MonoBehaviour
     private Animator anim;
     public int npc1SpeechTime = 10;
 
+	private bool nextNpc = false;
+
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -21,9 +23,11 @@ public class NPC1WalkIn : MonoBehaviour
 
         yield return new WaitForSeconds(npc1SpeechTime);
 
-        anim.Play("WalkForwardTurnRight_NtrlShort 2");
-        GameObject npc2 = GameObject.Find("GreenSuitMan");
-        npc2.GetComponent<NPC2WalkIn>().WalkIn();
+		if (nextNpc) {
+			anim.Play ("WalkForwardTurnRight_NtrlShort 2");
+			GameObject npc2 = GameObject.Find ("GreenSuitMan");
+			npc2.GetComponent<NPC2WalkIn> ().WalkIn ();
+		}
     }
 
     public void ExitRoom() // Called when user is done asking questions
