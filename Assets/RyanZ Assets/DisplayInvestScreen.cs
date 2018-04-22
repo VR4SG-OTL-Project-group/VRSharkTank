@@ -34,8 +34,8 @@ public class DisplayInvestScreen : MonoBehaviour {
 		doubleClick++;
 		questionMenu.SetActive (false);
 		GameObject.Find ("QuestionMenuObject_" + (pitcherNumber + 1)).SetActive (true);
-		GameObject.Find ("BlueSuitMan").GetComponent<NPC1WalkIn>().ExitRoom ();
-		GameObject.Find ("GreenSuitMan").GetComponent<NPC2WalkIn>().ExitRoom ();
+		//GameObject.Find ("BlueSuitMan").GetComponent<NPC1WalkIn>().ExitRoom ();
+		//GameObject.Find ("GreenSuitMan").GetComponent<NPC2WalkIn>().ExitRoom ();
 
 	}
 		

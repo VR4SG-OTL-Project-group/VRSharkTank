@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPC2WalkIn : MonoBehaviour {
+public class NPC3WalkIn : MonoBehaviour
+{
 
     private Animator anim;
-    public int npc2SpeechTime = 10;
+    public int npc3SpeechTime = 10;
 
     public void WalkIn()
     {
@@ -25,18 +26,13 @@ public class NPC2WalkIn : MonoBehaviour {
     {
         //This is a coroutine
 
-        yield return new WaitForSeconds(npc2SpeechTime);
+        yield return new WaitForSeconds(npc3SpeechTime);
 
-        anim.Play("WalkForwardTurnRight_NtrlShort 2"); // NPC 2 exits
-
-        GameObject npc3 = GameObject.Find("Person 3");
-        npc3.GetComponent<NPC2WalkIn>().WalkIn();
+        anim.Play("WalkForwardTurnRight_NtrlShort 2");
     }
 
     public void ExitRoom() // Called when user is done asking questions
     {
         anim.Play("WalkForwardTurnRight_NtrlShort 2");
-        GameObject npc3 = GameObject.Find("Person 3");
-        npc3.GetComponent<NPC2WalkIn>().WalkIn();
     }
 }
