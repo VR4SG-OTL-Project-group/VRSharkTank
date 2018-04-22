@@ -34,15 +34,15 @@ public class NPC1WalkIn : MonoBehaviour
             if (doneMoving == false)
             {
                 anim.Play("Idle");
-                StartCoroutine(WaitCoroutine());
-                doneMoving = true;
+                //StartCoroutine(WaitCoroutine());
+                //doneMoving = true;
             }
         }
             
-        if (transform.position.z <= GameObject.Find("Destination").transform.position.z)
+       if (transform.position.z <= GameObject.Find("Destination").transform.position.z)
             canMove = false;
 
-        if (canRotate2)
+      if (canRotate2)
         {
             //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.AngleAxis(180, Vector3.down), .05f);
             transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Destination2").transform.position, 0.025f);
@@ -58,20 +58,36 @@ public class NPC1WalkIn : MonoBehaviour
         //This is a coroutine
 
         yield return new WaitForSeconds(npc1SpeechTime);
+		doneMoving = true;
 
-		//if (nextNpc) {
+		/*
+		if (nextNpc) {
 		anim.Play ("Walk");
         canRotate2 = true;
         transform.Rotate(0, -90, 0);
         GameObject npc2 = GameObject.Find ("Person 2");
 		npc2.GetComponent<NPC2WalkIn> ().WalkIn ();
-		//}
+		}	
+		*/
     }
+
 
     public void ExitRoom() // Called when user is done asking questions
     {
-        anim.Play("WalkForwardTurnRight_NtrlShort 2");
-        GameObject npc2 = GameObject.Find("Person 2");
-        npc2.GetComponent<NPC2WalkIn>().WalkIn();
+		anim.Play ("Walk");
+		canRotate2 = true;
+		transform.Rotate(0, -90, 0);
+
+		//transform.position = Vector3.MoveTowards(transform.position, GameObject.Find("Destination2").transform.position, 0.025f);
+	
+		StartCoroutine(WaitCoroutine());
+
+		GameObject npc2 = GameObject.Find ("Person 2");
+		npc2.GetComponent<NPC2WalkIn>().WalkIn ();
+
+
+       // anim.Play("WalkForwardTurnRight_NtrlShort 2");
+        //GameObject npc2 = GameObject.Find("Person 2");
+       // npc2.GetComponent<NPC2WalkIn>().WalkIn();
     }
 }
