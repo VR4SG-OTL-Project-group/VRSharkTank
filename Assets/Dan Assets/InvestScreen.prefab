@@ -92,7 +92,8 @@ GameObject:
   - component: {fileID: 222222022478845630}
   - component: {fileID: 114330595604784520}
   - component: {fileID: 114107508361106122}
-  - component: {fileID: 114636349064520646}
+  - component: {fileID: 114674395328996454}
+  - component: {fileID: 114111936110288822}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -521,14 +522,14 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1055438079345558}
-  m_LocalRotation: {x: 0, y: -0, z: 0.7071068, w: -0.7071068}
-  m_LocalPosition: {x: -0.712368, y: 5, z: -1.2833076}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.051, y: 0.6489731, z: -0.003}
+  m_LocalScale: {x: 0.08296605, y: 9.247905, z: 0.09848279}
   m_Children:
   - {fileID: 224733338612355160}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23809299877445902
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -651,12 +652,12 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114330595604784520}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114636349064520646}
-        m_MethodName: NextScene
+      - m_Target: {fileID: 114111936110288822}
+        m_MethodName: finishedPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -668,6 +669,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114111936110288822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075990424692364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85fc4d05b684dbc4a9f7bbf4525cd12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114199770888896394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -855,7 +867,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224398517034777044}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1170,7 +1182,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224927234261368422}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1240,7 +1252,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 224816587830525424}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1000
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -1270,17 +1282,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114636349064520646
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1075990424692364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dfa4925d4241274d8aaf8c4a95a86c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114663156283091582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1313,7 +1314,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Budget Cap: $100,000.00'
+  m_Text: 'Budget Cap: $1,000,000
+
+'
+--- !u!114 &114674395328996454
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1075990424692364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85fc4d05b684dbc4a9f7bbf4525cd12b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114675902180086954
 MonoBehaviour:
   m_ObjectHideFlags: 1

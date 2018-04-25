@@ -16,7 +16,7 @@ public class SetText3 : MonoBehaviour
 
         investment = variableAccess.readInvest3();
         displayText = GetComponent<Text>();
-        displayText.text = "$" + (Mathf.Round(investment) * 1000).ToString() + ".00";
+        displayText.text = "$" + (Mathf.Round(investment) * 1000).ToString();
     }
 
     // Update is called once per frame

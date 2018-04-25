@@ -16,7 +16,7 @@ public class netChange : MonoBehaviour
 
         investment = variableAccess.readInvest1();
         displayText = GetComponent<Text>();
-        displayText.text = "$" + (Mathf.Round(investment) * (variableAccess.readInvest1return()) * 1000).ToString() + ".00";
+        displayText.text = "$" + (Mathf.Round(investment) * (variableAccess.readInvest1return()) * 1000).ToString();
     }
 
     // Update is called once per frame

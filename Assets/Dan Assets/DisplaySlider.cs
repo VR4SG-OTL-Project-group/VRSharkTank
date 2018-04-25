@@ -8,11 +8,11 @@ public class DisplaySlider : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         displayText = GetComponent<Text>();
-        displayText.text = "$0.00";
+        displayText.text = "$0";
 	}
 	
 	// Update is called once per frame
 	public void updateVal(float Value) {
-        displayText.text = "$" + (Mathf.Round(Value)*1000).ToString() + ".00";
+        displayText.text = "$" + (Mathf.Round(Value)*1000).ToString();
 	}
 }

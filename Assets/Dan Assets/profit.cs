@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class profit : MonoBehaviour
 {
@@ -16,7 +17,16 @@ public class profit : MonoBehaviour
 
         investment = variableAccess.readInvest1();
         displayText = GetComponent<Text>();
-        displayText.text = "$" + (Mathf.Round(investment) * (variableAccess.readInvest1return() - 1) * 1000).ToString() + ".00";
+        if (variableAccess.readInvest1return() - 1 > 0)
+        {
+            displayText.color = Color.green;
+        }
+        else
+        {
+
+            displayText.color = Color.red;
+        }
+        displayText.text = "$" + (Mathf.Round(investment) * Math.Abs(variableAccess.readInvest1return() - 1) * 1000).ToString();
     }
 
     // Update is called once per frame
