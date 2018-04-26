@@ -14,52 +14,98 @@ public class Timer : MonoBehaviour
     public Image powerPoint;
     public Sprite[] slide;
     private int slideNumber;
-    private int slideChangeTime;
+    private bool clockActive;
+    private int pitchNumber;
+
 
     void Start()
     {
         //initializes clock feature
-        timeRemaining = 61;
+        clock.text = "2:00";
 
         //initializes powerpoint feature
         whiteBoard.transform.localScale = new Vector3(0, 0, 0);
         slideNumber = 0;
-        slideChangeTime = 50;
+        pitchNumber = 0;
+        clockActive = false;
+
+        startClock();
     }
+
+    void startClock()
+    {
+        clockActive = true;
+        pitchNumber = pitchNumber + 1;
+        timeRemaining = 120;
+    }
+
+    void stopClock()
+    {
+        clockActive = false;
+        clock.text = "2:00";       
+    }
+
 
     void Update()
     {
         timeRemaining -= Time.deltaTime;
-        if (timeRemaining > 0)
+
+        if (clockActive)
         {
-            imageChanger();
+            if (timeRemaining > 0)
+            {
+                imageChangeChecker();
 
-            float minutes = Mathf.Floor(timeRemaining / 60);
-            float seconds = Mathf.Floor(timeRemaining % 60);
-            clock.text = " " + minutes.ToString("0") + ":" + seconds.ToString("00");
+                float minutes = Mathf.Floor(timeRemaining / 60);
+                float seconds = Mathf.Floor(timeRemaining % 60);
+                clock.text = " " + minutes.ToString("0") + ":" + seconds.ToString("00");
+            }
+            else
+                stopClock();
         }
-        else
-            reset();
     }
-
-
-    void reset()
+    
+    void imageChangeChecker()
     {
-        timeRemaining = Time.deltaTime + 61;
-
-        slideNumber = 0;
-        slideChangeTime = 50;
+        if(pitchNumber == 1)
+        {
+            if(timeRemaining > 115 && timeRemaining < 115.015)
+            {
+                imageChanger();
+            }
+            else if(timeRemaining > 110 && timeRemaining < 110 + 0.015)
+            {
+                imageChanger();
+            }
+        }
+        else if (pitchNumber == 2)
+        {
+            if (timeRemaining > 50 && timeRemaining < 50 + 0.02)
+            {
+                imageChanger();
+            }
+            else if (timeRemaining > 50 && timeRemaining < 50 + 0.02)
+            {
+                imageChanger();
+            }
+        }
+        else if (pitchNumber == 3)
+        {
+            if (timeRemaining > 50 && timeRemaining < 50 + 0.03)
+            {
+                imageChanger();
+            }
+            else if (timeRemaining > 50 && timeRemaining < 50 + 0.03)
+            {
+                imageChanger();
+            }
+        }
     }
 
     void imageChanger()
     {
-        
-        if (timeRemaining > slideChangeTime && timeRemaining < slideChangeTime + 0.03)
-        {
             whiteBoard.transform.localScale = new Vector3(1, 1, 1);
             powerPoint.sprite = slide[slideNumber];
             slideNumber++;
-            slideChangeTime = slideChangeTime - 10;
-        }
     }
 }
