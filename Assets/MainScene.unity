@@ -2782,39 +2782,32 @@ Prefab:
     - target: {fileID: 224503978537012124, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224927234261368422, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224806509955519614, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224398517034777044, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224924287875261692, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224816587830525424, guid: 3778ff4f9b19f15458a2a19385c073df,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114663156283091582, guid: 3778ff4f9b19f15458a2a19385c073df,
-        type: 2}
-      propertyPath: m_Text
-      value: 'Budget Cap: $1,000,000
-
-'
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3778ff4f9b19f15458a2a19385c073df, type: 2}
