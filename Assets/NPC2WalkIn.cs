@@ -14,6 +14,17 @@ public class NPC2WalkIn : MonoBehaviour {
 
     private int turnAmount = 90;
 
+    public GameObject passVariables;
+    private Timer timerScript;
+
+    private AudioSource presentation;
+
+    void Start()
+    {
+        timerScript = passVariables.GetComponent<Timer>();
+        presentation = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
 
@@ -56,6 +67,11 @@ public class NPC2WalkIn : MonoBehaviour {
     {
         //This is a coroutine
         yield return new WaitForSeconds(6);
+
+        //play adio and start clock
+        timerScript.startClock();
+        presentation.Play();
+
         anim.Play("UNIdle");
         //StartCoroutine(WaitToExitCoroutine()); // Remove if questions are used
         yield return new WaitForSeconds(5);
@@ -81,6 +97,7 @@ public class NPC2WalkIn : MonoBehaviour {
     {
         canRotate2 = true;
         transform.Rotate(0, -90, 0);
+        presentation.Stop();
         anim.Play("UNWalkF");
         //anim.Play("WalkForwardTurnRight_NtrlShort 2");
         GameObject npc3 = GameObject.Find("Person 3");

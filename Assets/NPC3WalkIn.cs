@@ -8,6 +8,17 @@ public class NPC3WalkIn : MonoBehaviour
     private Animator anim;
     public int npc3SpeechTime = 10;
 
+    public GameObject passVariables;
+    private Timer timerScript;
+
+    private AudioSource presentation;
+
+    void Start()
+    {
+        timerScript = passVariables.GetComponent<Timer>();
+        presentation = GetComponent<AudioSource>();
+    }
+
     public void WalkIn()
     {
         anim = GetComponent<Animator>();
@@ -19,7 +30,10 @@ public class NPC3WalkIn : MonoBehaviour
         //This is a coroutine
         yield return new WaitForSeconds(5);
         anim.Play("WalkFWD");
-        StartCoroutine(WaitToExitCoroutine()); // Remove if questions are used
+        yield return new WaitForSeconds(6);
+        timerScript.startClock();
+        presentation.Play();
+        //StartCoroutine(WaitToExitCoroutine()); // Remove if questions are used
     }
 
     IEnumerator WaitToExitCoroutine()
@@ -33,6 +47,7 @@ public class NPC3WalkIn : MonoBehaviour
 
     public void ExitRoom() // Called when user is done asking questions
     {
+        presentation.Stop();
         anim.Play("WalkForwardTurnRight_NtrlShort 2");
     }
 }

@@ -15,8 +15,15 @@ public class NPC1WalkIn : MonoBehaviour
 
     private int turnAmount = 90;
 
+    public GameObject passVariables;
+    private Timer timerScript;
+
+    private AudioSource presentation;
+
     void Start()
     {
+        presentation = GetComponent<AudioSource>();
+        timerScript = passVariables.GetComponent<Timer>();
         anim = GetComponent<Animator>();
         StartCoroutine(WaitToStartPitchCoroutine());
         //anim.Play("Walk");
@@ -75,11 +82,14 @@ public class NPC1WalkIn : MonoBehaviour
     IEnumerator WaitToStartPitchCoroutine() // Start Audio in here
     {
         yield return new WaitForSeconds(8);
+        timerScript.startClock();
+        presentation.Play();
         // Start speech 1 audio
     }
 
     public void ExitRoom() // Called when user is done asking questions
     {
+        presentation.Stop();
 		anim.Play ("Walk");
 		canRotate2 = true;
 		transform.Rotate(0, -90, 0);
