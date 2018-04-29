@@ -23,7 +23,8 @@ public class DisplayInvestScreen : MonoBehaviour {
 		if (finishedCount >= 1) {
 			questionMenu.SetActive (false);
 			investScreen.SetActive (true);
-		} else
+            GameObject.Find("Person 3").GetComponent<NPC3WalkIn>().ExitRoom();
+        } else
 			investScreen.SetActive (false);
 	}
 	public void finishedPressed(){
@@ -34,9 +35,12 @@ public class DisplayInvestScreen : MonoBehaviour {
 		doubleClick++;
 		questionMenu.SetActive (false);
 		GameObject.Find ("QuestionMenuObject_" + (pitcherNumber + 1)).SetActive (true);
-		GameObject.Find ("Person 1").GetComponent<NPC1WalkIn>().ExitRoom ();
-		//GameObject.Find ("GreenSuitMan").GetComponent<NPC2WalkIn>().ExitRoom ();
+        if (pitcherNumber == 1)
+		    GameObject.Find ("Person 1").GetComponent<NPC1WalkIn>().ExitRoom ();
+        else if (pitcherNumber == 2)
+            GameObject.Find("Person 2").GetComponent<NPC2WalkIn>().ExitRoom();
+        //GameObject.Find ("GreenSuitMan").GetComponent<NPC2WalkIn>().ExitRoom ();
 
-	}
+    }
 		
 }

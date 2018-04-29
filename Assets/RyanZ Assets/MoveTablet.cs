@@ -22,12 +22,12 @@ public class MoveTablet : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (moveUp) {
-			Debug.Log ("Moving Up");
+			//Debug.Log ("Moving Up");
 			transform.position = Vector3 .MoveTowards(transform.position, upPosition, 0.01f);
 			transform.rotation= Quaternion.Slerp(transform.rotation, upRotation, .10f);     
 
 		}else{
-			Debug.Log ("Moving Down");
+			//Debug.Log ("Moving Down");
 			//tablet.transform.position = originalPosition;
 			transform.position = Vector3 .MoveTowards(transform.position, originalPosition, 0.01f);
 			transform.rotation= Quaternion.Slerp(transform.rotation, downRotation, .10f);     

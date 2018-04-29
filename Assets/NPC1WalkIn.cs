@@ -18,6 +18,7 @@ public class NPC1WalkIn : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        StartCoroutine(WaitToStartPitchCoroutine());
         //anim.Play("Walk");
         //StartCoroutine(WaitCoroutine()); // Remove if questions are used
 
@@ -71,6 +72,11 @@ public class NPC1WalkIn : MonoBehaviour
 		*/
     }
 
+    IEnumerator WaitToStartPitchCoroutine() // Start Audio in here
+    {
+        yield return new WaitForSeconds(8);
+        // Start speech 1 audio
+    }
 
     public void ExitRoom() // Called when user is done asking questions
     {
@@ -82,7 +88,7 @@ public class NPC1WalkIn : MonoBehaviour
 	
 		StartCoroutine(WaitCoroutine());
 
-		GameObject npc2 = GameObject.Find ("Person 2");
+        GameObject npc2 = GameObject.Find ("Person 2");
 		npc2.GetComponent<NPC2WalkIn>().WalkIn ();
 
 

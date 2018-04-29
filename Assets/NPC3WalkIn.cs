@@ -28,7 +28,7 @@ public class NPC3WalkIn : MonoBehaviour
 
         yield return new WaitForSeconds(npc3SpeechTime);
 
-        anim.Play("WalkForwardTurnRight_NtrlShort 2");
+        //anim.Play("WalkForwardTurnRight_NtrlShort 2");
     }
 
     public void ExitRoom() // Called when user is done asking questions
