@@ -8,6 +8,7 @@ TagManager:
   - Cube
   - Cylinder
   - Boss
+  - Buttons
   layers:
   - Default
   - TransparentFX

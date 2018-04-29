@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.68361646, g: 0.7761399, b: 0.8526095, a: 1}
+  m_IndirectSpecularColor: {r: 0.6839149, g: 0.77730876, b: 0.85216826, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1138,7 +1138,7 @@ GameObject:
   - component: {fileID: 245604704}
   m_Layer: 5
   m_Name: FinancingStrategyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1545,7 +1545,7 @@ GameObject:
   - component: {fileID: 297899517}
   m_Layer: 5
   m_Name: TechnologyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1795,7 +1795,7 @@ GameObject:
   - component: {fileID: 312279868}
   m_Layer: 5
   m_Name: CompetitionButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2809,6 +2809,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1075990424692364, guid: 3778ff4f9b19f15458a2a19385c073df, type: 2}
+      propertyPath: m_TagString
+      value: Buttons
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3778ff4f9b19f15458a2a19385c073df, type: 2}
   m_IsPrefabParent: 0
@@ -3091,7 +3095,7 @@ GameObject:
   - component: {fileID: 576987652}
   m_Layer: 5
   m_Name: CompetitionButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3767,7 +3771,7 @@ GameObject:
   - component: {fileID: 682875154}
   m_Layer: 5
   m_Name: MarketOpportunityButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3989,7 +3993,7 @@ GameObject:
   - component: {fileID: 697170130}
   m_Layer: 5
   m_Name: OperationalPlanButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4777,7 +4781,7 @@ GameObject:
   - component: {fileID: 754988468}
   m_Layer: 5
   m_Name: OperationalPlanButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5529,7 +5533,7 @@ GameObject:
   - component: {fileID: 851220079}
   m_Layer: 5
   m_Name: OperationalPlanButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6318,7 +6322,7 @@ GameObject:
   - component: {fileID: 912061811}
   m_Layer: 5
   m_Name: Finished
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7789,7 +7793,7 @@ GameObject:
   - component: {fileID: 1056366302}
   m_Layer: 5
   m_Name: MarketOpportunityButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8073,7 +8077,7 @@ GameObject:
   - component: {fileID: 1103914915}
   m_Layer: 5
   m_Name: TechnologyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8493,7 +8497,7 @@ GameObject:
   - component: {fileID: 1195858067}
   m_Layer: 5
   m_Name: TeamButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9181,7 +9185,7 @@ GameObject:
   - component: {fileID: 1312161380}
   m_Layer: 5
   m_Name: FinancingStrategyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9680,7 +9684,7 @@ GameObject:
   - component: {fileID: 1353360915}
   m_Layer: 5
   m_Name: TeamButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10630,7 +10634,7 @@ GameObject:
   - component: {fileID: 1482219892}
   m_Layer: 5
   m_Name: MarketOpportunityButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12928,7 +12932,7 @@ GameObject:
   - component: {fileID: 1800565639}
   m_Layer: 5
   m_Name: TeamButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13578,7 +13582,7 @@ GameObject:
   - component: {fileID: 1917439908}
   m_Layer: 5
   m_Name: TechnologyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13886,7 +13890,7 @@ GameObject:
   - component: {fileID: 1922348452}
   m_Layer: 5
   m_Name: FinancingStrategyButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14253,7 +14257,7 @@ GameObject:
   - component: {fileID: 1958558985}
   m_Layer: 5
   m_Name: Finished
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15105,7 +15109,7 @@ GameObject:
   - component: {fileID: 2116526244}
   m_Layer: 5
   m_Name: Finished
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15438,7 +15442,7 @@ GameObject:
   - component: {fileID: 2128119796}
   m_Layer: 5
   m_Name: CompetitionButton
-  m_TagString: Untagged
+  m_TagString: Buttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
