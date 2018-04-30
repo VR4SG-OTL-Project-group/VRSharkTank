@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class MoveTablet : MonoBehaviour {
 	public GameObject tablet;
-	private bool moveUp = false;	
+	public bool moveUp = false;	
 	private Vector3 originalPosition;
 
 	private Vector3 upPosition;
@@ -49,7 +49,7 @@ public class MoveTablet : MonoBehaviour {
 
 		if (moveUp)
 			moveUp = false;
-		else
-			moveUp = true;
+	else
+		moveUp = true;  
 	}
 }
