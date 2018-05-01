@@ -14,11 +14,13 @@ public class maxBudget : MonoBehaviour {
     static double investment3return = 1.2;
     static int updateInt = 0;
     Text displayText;
+    Button button;
     // Use this for initialization
     void Start () {
         displayText = GetComponent<Text>();
         displayText.text = "Current: $0.00";
         updateInt += 1;
+        button = GameObject.Find("FinishInvest").GetComponent<Button>();
     }
 
     public void updateInvest1(float invest1)
@@ -69,15 +71,18 @@ public class maxBudget : MonoBehaviour {
     void Update () {
         if (updateInt < 2)
         {
+          
             currentInvest = Mathf.Round(investment1) + Mathf.Round(investment2) + Mathf.Round(investment3);
             displayText.text = "Current: $" + Mathf.Round(currentInvest * 1000).ToString();
             if (currentInvest > budgetCap / 1000)
             {
                 displayText.color = Color.red;
+                button.interactable = false;
             }
             else
             {
                 displayText.color = Color.green;
+                button.interactable = true;
             }
         }
 	}

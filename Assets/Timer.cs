@@ -48,7 +48,10 @@ public class Timer : MonoBehaviour
 
 
         //moves the tablet down
-        moveTabletDown();
+        if (pitchNumber == 1 || pitchNumber == 2)
+        {
+            moveTabletDown();
+        }
     }
 
 
