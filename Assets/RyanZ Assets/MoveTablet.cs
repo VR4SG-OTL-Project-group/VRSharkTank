@@ -45,11 +45,11 @@ public class MoveTablet : MonoBehaviour {
 	}
 
 	public void moveFront(){
-		Debug.Log ("Clicked!");
+		/* Debug.Log ("Clicked!");
 
 		if (moveUp)
 			moveUp = false;
 	else
-		moveUp = true;  
+		moveUp = true;  */
 	}
 }

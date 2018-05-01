@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class nextScene : MonoBehaviour {
 
 	public void NextScene () {
-		SceneManager.LoadScene("finalScene");
+        DontDestroyOnLoad(GameObject.Find("InvestReport"));
+        DontDestroyOnLoad(GameObject.Find("InvestScreen"));
+        SceneManager.LoadScene("finalScene");
+        //DontDestroyOnLoad''
 	}
 }

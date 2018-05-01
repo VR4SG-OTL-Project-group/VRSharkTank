@@ -51,7 +51,7 @@ public class DialogueManager : MonoBehaviour {
 	//Function to play audio
 	public void beginDialogue(AudioClip passedClip){
 		audioClip = passedClip;
-
+        /*
 		//Reset all lists
 		subtitleText = new List<string>();
 		subtitleTimingStrings = new List<string>();
@@ -105,7 +105,7 @@ public class DialogueManager : MonoBehaviour {
 		//Set initial subtitle text
 		if (subtitleText [0] != null) {
 			displayedSubtitle = subtitleText [0];
-		}
+		}*/
 		audio.clip = passedClip;
 		audio.Play();
 		

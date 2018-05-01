@@ -9,9 +9,9 @@ public class profit4 : MonoBehaviour
     Text displayText;
     public GameObject passVariables;
     private maxBudget variableAccess;
-    float investment1;
-    float investment2;
-    float investment3;
+    public static float investment1;
+    public static float investment2;
+    public static float investment3;
     double total;
     // Use this for initialization
     void Update()
