@@ -26,7 +26,7 @@ public class EndIntro : MonoBehaviour {
 
 	private IEnumerator finishAudioClip(){
 		yield return new WaitForSeconds (audioLength + 5);
-		SceneManager.LoadScene ("MainScene");
+		SceneManager.LoadScene ("PitchPresentations");
 	}
 
 }

@@ -8,7 +8,7 @@ public class nextScene : MonoBehaviour {
 	public void NextScene () {
         DontDestroyOnLoad(GameObject.Find("InvestReport"));
         DontDestroyOnLoad(GameObject.Find("InvestScreen"));
-        SceneManager.LoadScene("finalScene");
+        SceneManager.LoadScene("BossEnd");
         //DontDestroyOnLoad''
 	}
 }

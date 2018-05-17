@@ -40,7 +40,7 @@ public class MenuScript : MonoBehaviour
     public void StartLevel() //this function will be used on our Play button
 
     {
-        SceneManager.LoadScene(1); //this will load our first level from our build settings. "1" is the second scene in our game
+        SceneManager.LoadScene("BossIntro"); //this will load our first level from our build settings. "1" is the second scene in our game
 
     }
 
