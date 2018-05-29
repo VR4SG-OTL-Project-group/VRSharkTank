@@ -9,14 +9,11 @@ EditorBuildSettings:
     path: Assets/StartMenu.unity
     guid: 0caba059819dcb24c801712fc98cd222
   - enabled: 1
-    path: Assets/q 1.unity
-    guid: 46d4e949fb0a59a459cffa8752ac2a6c
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/BossIntro.unity
+    guid: dc3e17deccd0b4240a29d3f73b5607f6
   - enabled: 1
-    path: Assets/MainScene.unity
-    guid: ac7442ec8ad59ed448e371b8a939e169
+    path: Assets/PitchPresentations.unity
+    guid: a94ef98d3a5ab497c818db0f9878453b
   - enabled: 1
-    path: Assets/finalScene.unity
-    guid: e9674472c444645438d51de937472036
+    path: Assets/BossEnd.unity
+    guid: 21ad239ffe5594f23b8d55af21be4cf7
