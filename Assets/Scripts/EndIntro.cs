@@ -8,12 +8,14 @@ public class EndIntro : MonoBehaviour {
 	private bool isPlaying = false;
 	public AudioClip dialogueClip;
 	public float audioLength;
+
+	void Start () {
+		playDialogueClip ();
+	}
+
 	// Update is called once per frame
 	void Update () {
-		/*if(Input.GetMouseButtonDown(0)){
-		//if (Input.GetKeyDown (KeyCode.Space)) {
-			DialogueManager.Instance.beginDialogue (dialogueClip);
-		}*/
+		
 	}
 
 	public void playDialogueClip(){
