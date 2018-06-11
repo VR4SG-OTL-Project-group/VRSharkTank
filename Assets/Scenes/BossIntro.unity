@@ -4791,7 +4791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb0b04df00630e34ea5722ddacf43d1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueClip: {fileID: 8300000, guid: 5bf0b3c3e0704d241b9888573113e454, type: 3}
+  dialogueClip: {fileID: 8300000, guid: 22c9609b96743574ab349c299ab273fe, type: 3}
   audioLength: 41
 --- !u!23 &1590756582
 MeshRenderer:
